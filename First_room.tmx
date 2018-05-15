@@ -1600,9 +1600,10 @@ RemoveCollidedObject(); Say(&quot;Got one coin&quot;)</property>
   </tile>
  </tileset>
  <tileset firstgid="1153" source="characters.tsx"/>
+ <tileset firstgid="1409" source="fw-horror-interior-left.tsx"/>
  <layer name="ground1" width="94" height="62">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
  <layer name="ground2" width="94" height="62">
@@ -1620,77 +1621,15 @@ spawned = True</property>
 spawned = False</property>
    </properties>
   </object>
-  <object id="21" name="An Object to be moved" gid="809" x="480" y="176" width="16" height="16">
-   <properties>
-    <property name="OnCollision">
-
-if engine.playerCollideRect.right &lt; collidedObject.px:
-    collidedObject.px += 4
-elif engine.playerCollideRect.left &gt; collidedObject.px + collidedObject.width:
-    collidedObject.px -= 4
-
-if engine.playerCollideRect.bottom &lt; collidedObject.py:
-    collidedObject.py += 4
-elif engine.playerCollideRect.top &gt; collidedObject.py + collidedObject.height:
-    collidedObject.py -= 4
-
-
-PreventMove()
-</property>
-   </properties>
-  </object>
-  <object id="22" name="Sign" gid="850" x="640" y="336" width="32" height="32">
+  <object id="22" name="Sign" gid="850" x="456" y="524" width="32" height="32">
    <properties>
     <property name="OnClick">Say(&quot;Sign says: 'Come here!'&quot;)
 PreventMove()</property>
     <property name="OnCollision" value="NextMap()"/>
    </properties>
   </object>
-  <object id="23" name="coin" gid="1025" x="350" y="124" width="16" height="16"/>
-  <object id="24" name="coin" gid="1025" x="452" y="414" width="16" height="16">
-   <properties>
-    <property name="OnCollision" value="AddObjectToInventory(collidedObject)"/>
-   </properties>
-  </object>
-  <object id="25" name="coin" gid="1025" x="173" y="493" width="16" height="16"/>
-  <object id="26" name="Chest1" gid="809" x="287" y="425" width="32" height="32">
-   <properties>
-    <property name="Content" value="KEY_1"/>
-    <property name="OnCollision" value="PreventMove()"/>
-    <property name="OnCollisionEnd" value="collidedObject.tile=engine.tilesByName[&quot;chest-closed&quot;]"/>
-    <property name="OnCollisionStart" value="collidedObject.tile=engine.tilesByName[&quot;chest-open&quot;]; GiveObject(&quot;Key2&quot;)"/>
-   </properties>
-  </object>
-  <object id="34" name="start_position" gid="850" x="592" y="336" width="32" height="32"/>
-  <object id="39" name="killer-plants1" gid="999" x="160" y="176" width="32" height="32">
-   <properties>
-    <property name="Animate" value="true"/>
-    <property name="AnimationSpeed" value="30"/>
-    <property name="Frame1" value="plants-killer-1"/>
-    <property name="Frame2" value="plants-killer-2"/>
-   </properties>
-  </object>
-  <object id="41" name="Moving Coin" gid="1025" x="224" y="64" width="32" height="32">
-   <properties>
-    <property name="OnAnimate">if random.randint(0,5) == 2:
-    animatedObject.px = animatedObject.px + random.randint(-1, 1)
-    animatedObject.py = animatedObject.py + random.randint(-1, 1)</property>
-   </properties>
-  </object>
-  <object id="43" name="Door2" gid="1035" x="400" y="488" width="32" height="32">
-   <properties>
-    <property name="OnCollision" value="if not InventoryContains(&quot;Key1&quot;): PreventMove()"/>
-    <property name="OnCollisionEnd" value="collidedObject.tile = engine.tilesByName[&quot;door-left&quot;]"/>
-    <property name="OnCollisionStart">if InventoryContains(&quot;Key1&quot;): collidedObject.tile = engine.tilesByName[&quot;door-down&quot;]
-</property>
-   </properties>
-  </object>
-  <object id="44" name="Key1" gid="1041" x="508" y="344" width="32" height="32">
-   <properties>
-    <property name="OnCollision" value="AddObjectToInventory(collidedObject)"/>
-   </properties>
-  </object>
-  <object id="45" name="Door1" gid="1036" x="572" y="408" width="32" height="32">
+  <object id="34" name="start_position" gid="850" x="318" y="496" width="32" height="32"/>
+  <object id="45" name="Door1" gid="1036" x="1018" y="564" width="32" height="32">
    <properties>
     <property name="OnCollisionEnd" value="collidedObject.tile = engine.tilesByName[&quot;door-right&quot;]"/>
     <property name="OnCollisionStart" value="collidedObject.tile = engine.tilesByName[&quot;door-down&quot;]"/>
@@ -1701,33 +1640,13 @@ PreventMove()</property>
     <property name="OnCollision" value="AddObjectToInventory(collidedObject)"/>
    </properties>
   </object>
-  <object id="47" name="Door3" gid="1033" x="408" y="716" width="32" height="32">
+  <object id="85" gid="1202" x="312" y="570" width="32" height="32">
    <properties>
-    <property name="OnCollision" value="if not InventoryContains(&quot;Key2&quot;): PreventMove()"/>
-    <property name="OnCollisionEnd" value="collidedObject.tile = engine.tilesByName[&quot;door-up&quot;]"/>
-    <property name="OnCollisionStart">if InventoryContains(&quot;Key2&quot;): collidedObject.tile = engine.tilesByName[&quot;door-left&quot;]
-</property>
-   </properties>
-  </object>
-  <object id="85" gid="1202" x="876" y="731" width="32" height="32">
-   <properties>
-    <property name="OnAnimate">if DistanceFromPlayer(animatedObject) &lt; 152:
-    MoveObjectTowards(animatedObject,2)</property>
-    <property name="OnCollisionStart">SayOnce(&quot;Well Hello There&quot;)
-time.sleep(1)
-SayOnce(&quot;You must be Yumiko&quot;)
-time.sleep(1)
-SayOnce(&quot;We have expected you, now straight to the point&quot;)
-time.sleep(1)
-SayOnce(&quot;To prove your identity, you must complete a task. Rescue Athena from the bandit camp&quot;)
-time.sleep(1)
-SayOnce(&quot;Good luck Yumiko&quot;)
-
-</property>
+    <property name="OnCollisionStart" value="SayOnce(&quot;Welcome to this brilliant world&quot;)"/>
    </properties>
   </object>
  </objectgroup>
- <layer name="overlay" width="94" height="62">
+ <layer name="overlay" width="94" height="62" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt1rEJhEAQBdBNLMUrRe3E6+SsRNt0RSPZ00QZ0PfgM7DRZ4JlUgIAAAAAjjRb2sIspYup+ThjzrRlPJl9zjemJgA3qpL/PYK9X2PZ49EduZ+/nCGk6bPUab0R/92NpbdPSFMAAAAAAAAAAAAAAAAAAHifGZ8PGJ4=
   </data>

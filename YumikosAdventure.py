@@ -1,7 +1,7 @@
 import pygame, sys, math, random
 
 import engine
-
+import time
 
 global screen, screen_size, current_keys, last_keys
 global tilemap, object, objects, doors, keys
@@ -16,8 +16,8 @@ collidedTile = None
 collidedCell = None
 clickedObject = None
 createdObject = None
-
-map_names = ["start.tmx", "adventure-start.tmx", "drylands.tmx", "goblin-forest.tmx"]
+# "createdBy.tmx",
+map_names = ["First_room.tmx", "adventure-start.tmx", "drylands.tmx", "goblin-forest.tmx"]
 map_index = 0
 current_map = map_names[map_index]
 
@@ -28,7 +28,7 @@ noPlayerInput = False
 
 # change file for different music
 music = pygame.mixer.music.load("music.wav")
-screen_size = (1500,800)
+screen_size = (1200, 700)
 
 frameclock = pygame.time.Clock()
 

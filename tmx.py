@@ -14,6 +14,7 @@ from pygame import Rect
 from xml.etree import ElementTree
 from base64 import b64decode
 from zlib import decompress
+import time
 
 
 class Tile(object):

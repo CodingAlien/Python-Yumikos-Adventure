@@ -1,4 +1,5 @@
 import pygame, tmx, sys
+import time
 
 MAX_TEXT_LINES = 7
 DEFAULT_TEXT_TIMEOUT = 60 * 10
@@ -45,6 +46,7 @@ def Init(screenSize, game_pointer):
     global screen_size
     global inventoryBox, inventorySurface
     global font, lineHeight, MARGIN_BETWEEN_LINES
+    global createdByrect, createdBySurface
 
     font = pygame.font.SysFont("apple casual" , 24)
     lineHeight = font.get_height() + MARGIN_BETWEEN_LINES
@@ -65,9 +67,13 @@ def Init(screenSize, game_pointer):
     objectsSurface = pygame.image.load("images/objects.png")
     charactersSurface = pygame.image.load("images/characters.png")
     inventorySurface = pygame.image.load("images/inventory.png")
+    createdBySurface = pygame.image.load("images/createdBy.png")
 
     player = charactersSurface.subsurface(pygame.Rect(0, 0, 32, 32))
     inventoryBox = inventorySurface.subsurface(pygame.Rect(0, 0, 36, 36))
+    createdByrect = createdBySurface.get_rect()
+    createdByrect[0] = 1400
+    createdByrect[1] = 0
 
     mouse_click_pos = [-1, -1]
     last_mouse_click_pos = [-1, -1]
@@ -159,7 +165,7 @@ def processObjectClick(object):
     global clickedObject, moved
 
     clickedObject = object
-
+    intro = 0
     if clickedObject != None and "OnClick" in clickedObject.properties:
         onClick = clickedObject.properties["OnClick"]
         game.clickedObject = clickedObject
@@ -263,6 +269,11 @@ def Animate():
 
     for object in autoAnimationObjects:
         AnimateObject(object)
+
+def CreateShape(shape, x, y):
+    if shape == "rectangle":
+        pygame.draw.rect(screen, 000,[100,100], [500, 500],)
+
 
 
 def AnimateObject(object):
@@ -513,6 +524,7 @@ def DrawScreen():
     global player
     global font, textLines, textLinesTimeout, textLastText, lineHeight
 
+
     nextPlayerPos.move_ip(-tilemap.viewport.x, -tilemap.viewport.y)
 
     screen.fill((0,0,0))
@@ -522,6 +534,24 @@ def DrawScreen():
             layer.draw(screen)
         if layer.name == "objects":
             screen.blit(player, nextPlayerPos)
+
+    time_elasped = 5
+    # game_mode = 0
+    # if game_mode == 0:
+    #
+    #     pygame.draw.rect(screen, 000, (1, 1, 1200, 700))
+    #     screen.blit(createdBySurface, createdByrect)
+    #     while time_elasped < 10000:
+    #         for x in range(0, 1000):
+    #             time_elasped += 1
+    #             print(time_elasped)
+    #             if time_elasped > 1000:
+    #                 break
+    #     # createdByrect[0] = 300
+    #     while createdByrect[0] != 0:
+    #         createdByrect[0] -= 0.5
+    # else:
+    #     None
 
     if showInventory:
         drawPointer = [screen_size[0] - 48, 48]
